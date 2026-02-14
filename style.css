@@ -1,11 +1,121 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
-.negrito{
-    font-weight: bold;
+h1 {
+  margin: 10px;
+  padding: 10px;
 }
 
-li{
-    font-family: 'Courier New', Courier, monospace;
+header h1 {
+  position: fixed;
+  border: 1px solid gray;
+  padding: 1px;
+  top: 0px;
+  background-color: aliceblue;
+}
+
+#projetos {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #061427;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+.card p {
+  color: #b9c3d1;
+  font-size: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffa6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.inicial {
+  color: rgb(44, 255, 5);
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+html {
+  background-color: black;
+  opacity: 0, 2;
+}
+
+p {
+  color: aliceblue;
+}
+
+h2 {
+  color: aqua;
+}
+
+h3 {
+  color: cyan;
+}
+
+table {
+  color: darkgrey;
+}
+
+form {
+  color: aliceblue;
+}
+
+address {
+  color: aliceblue;
+}
+
+.textoBranco {
+  color: aliceblue;
+}
+
+a {
+  color: aqua;
+}
+
+.imgAlunos{
+  width: 328px;
+  height: 315px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+.caraterísticas {
+  clear: both;
 }
