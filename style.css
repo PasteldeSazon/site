@@ -73,8 +73,10 @@ header h1 {
 }
 
 html {
-  background-color: black;
-  opacity: 0, 2;
+  background-image: url("imagem\ de\ fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 p {
@@ -114,8 +116,10 @@ a {
   height: 315px;
   margin-top: 20px;
   margin-bottom: -40px;
+
 }
 
 .caraterísticas {
   clear: both;
 }
+
