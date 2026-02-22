@@ -14,6 +14,16 @@ function verificarIdade() {
     );
   }
 }
+function enviarComMensagem(event) {
+    // 1. Pega o nome para personalizar o alerta
+    const nome = document.getElementById('nome').value;
+
+    // 2. Mostra a sua mensagem personalizada
+    alert("Olá " + nome + "! Sua mensagem foi processada e está sendo enviada para o Gabriel via Formspree.");
+
+    // 3. O formulário continuará o envio normalmente após o OK do alerta
+    return true; 
+}
 const meuForm = document.querySelector("form");
 
 meuForm.addEventListener("submit", function (event) {
