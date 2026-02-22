@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- deixa a pagina com a configuração de responsividade -->
     <title>GABRIEL</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header>
-      <h1 class="inicial">Meu primeiro site oficial</h1>
+  <body id="topo">
+    <header id="containerNavbar">
+      <h1>Meu primeiro site oficial</h1>
       <br />
-      <br />
-      <br />
-      <br />
+      <select id="Idioma">
+        <option value="brasileiro">Português (Brasil)</option>
+        <option value="americano">Americano</option>
+        <option value="espanhol">Espanhol</option>
+        <option value="frances">Frances</option>
+      </select>
+      <button onclick="escolherIdioma()">Escolher idioma</button>
       <nav>
         <!-- Seção de navegação do site. -->
         <ul>
@@ -22,7 +27,7 @@
             <a class="negrito" href="#sobre-mim">Sobre mim</a>
           </li>
           <li>
-            <a class="negrito" href="#projetos">O que eu faço da vida</a>
+            <a class="negrito" href="#projetos">Meus projetos</a>
           </li>
           <li>
             <a class="negrito" href="#motivacao"
@@ -79,7 +84,7 @@
         projetos em que ja participei:
       </p>
       <br />
-      <section id="projetos">
+      <section>
         <h2>Meus Projetos</h2>
 
         <div class="grade-projetos">
@@ -131,14 +136,6 @@
       </section>
 
       <br />
-      <article>
-        <h3>Portfólio</h3>
-
-        <p>
-          Este foi o primeiro site que desenvolvi com front end, como dito
-          antes, a cada vez que avanço nas aulas, irei melhorar meu site
-        </p>
-      </article>
     </section>
 
     <section id="motivacao">
@@ -331,28 +328,38 @@
         <tbody>
           <tr>
             <td>HTML</td>
-            <td>Iniciante</td>
+            <td>Intermediário/Avançado</td>
             <td>
-              Capaz de construir estruturas de páginas web semânticas e
-              responsivas.
+              Capaz de construir estruturas de páginas web semânticas,
+              responsivas e com bom conteúdo
             </td>
           </tr>
 
           <tr>
             <td>CSS</td>
-            <td>Nada</td>
-            <td>Apenas ouvi falar e ver pouquíssimas vezes.</td>
+            <td>intermediário/Avançado</td>
+            <td>
+              Já sei utilizar de forma intermediaria/avançada CSS GRID LAYOUT,
+              FLEXBOX, BOX MODEL, COLOR`s, DOMINAÇÃO DE SELETORES, etc...
+            </td>
           </tr>
 
           <tr>
             <td>Javascript</td>
-            <td>Quase nada</td>
+            <td>Básico/Intermediário</td>
             <td>
-              Sei mexer com elementos de iniciante simple, entender regras
-              <br />
-              básicas e mexer com variáveis, fazer operações aritméticas, básico
-              <br />
-              de operações lógicas.
+              Dominação do conceito de variáveis, manipulação de elementos da
+              pagina, Swith-Case e Arrays.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Em Aprendizado</td>
+            <td>Tudo em que ainda estou aprendendo</td>
+            <td>
+              Laços de Repetição, Aprofundamento de Funções e Eventos,
+              Manipulação do DOM e Validação de Formulários com Javascript.
+              Praticamente TUDO sobre Back-end.
             </td>
           </tr>
         </tbody>
@@ -575,31 +582,39 @@
 
         <address>
           Email:
-          <a href="mailto:jaironmatadordeporco@gmail.com"
-            >jaironmatadordeporco@gmail.com</a
+          <a href="mailto:passosgabriel2022@gmail.com"
+            >passosgabriel2022@gmail.com</a
           >
           <br />
           Contato WhatsApp:
-          <a href="tel:+55 (53) 999840101">+55 (53) 999840101</a>
+          <a href="tel:+55 (53) 999528115">+55 (53) 999528115</a>
         </address>
         <br />
 
-        <form action="">
+        <form action="https://formspree.io/f/mwvnrdpw" method="POST">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://seusite.com/obrigado.html"
+          />
+
           <label for="nome">Nome: </label>
-          <input type="text" id="nome" name="nome" required /> <br />
+          <input type="text" id="nome" name="nome" placeholder="primeiro nome"required /> <br />
 
           <label for="sobrenome">Sobrenome: </label>
-          <input type="text" id="sobrenome" name="sobrenome" required /> <br />
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="resto do nome"required /> <br />
 
           <label for="email">E-mail: </label>
           <input type="email" id="email" name="email" required /> <br />
 
           <label for="telefone">Telefone: </label>
-          <input type="tel" id="telefone" name="telefone" /> <br />
+          <input type="tel" id="telefone" name="telefone" placeholder="(Seu DDD) Seu numero de telefone"/> <br />
 
-          <label for="datanascimento">Data de nascimento: </label>
-          <input type="date" required /> <br />
+          <label for="idade">Idade: </label>
+          <input type="number" id="idade" name="idade" />
+          <button type="button" onclick="verificarIdade()">Verificar</button>
 
+          <br />
           <label for="nacionalidade">Nacionalidade: </label>
           <select name="nacionalidade" id="nacionalidade">
             <option value="brasileiro">Brasileiro (a)</option>
@@ -610,13 +625,13 @@
           <label for="outra">Outra nacionalidade: </label>
           <input
             type="text"
-            id="Outra nacionalidade"
-            name="Outra nacionalidade"
+            id="Outra_nacionalidade"
+            name="Outra_nacionalidade"
           />
           <br />
 
           <label for="natal">Cidade Natal</label>
-          <input type="text" required />
+          <input type="text" name="cidade_natal" id="natal" required />
           <br />
           <label for="genero">Gênero: </label>
           <select name="genero" id="genero">
@@ -641,13 +656,9 @@
             id="mensagem"
             cols="30"
             rows="10"
+            placeholder="Escreva sua mensagem aqui..."
           ></textarea>
           <br />
-
-          <input type="checkbox" id="inscricao" name="inscricao" />
-          <label for="inscricao"
-            >Deseja receber minha newsletter? Fique por dentro</label
-          >
 
           <br />
 
@@ -657,7 +668,9 @@
         </form>
       </section>
 
-      <p>Direitos reservados a Gabriel</p>
+      <p id="direitos">&copy;Direitos reservados a Gabriel</p>
     </footer>
+    <a href="#topo" class="btn-topo">↑</a>
+    <script src="script.js"></script>
   </body>
 </html>

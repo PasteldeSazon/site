@@ -1,0 +1,81 @@
+============================================================
+       DOCUMENTAÇÃO DO PROJETO: MEU PRIMEIRO PORTFÓLIO
+============================================================
+
+PREFÁCIO
+---------
+Olá, meu nome é Gabriel da Rosa dos Passos, tenho 15 anos, moro em 
+Schroeder (SC) e estudo no turno integral da EEB Prof. Heleodoro Borges.
+
+Conheci o SCTEC por meio de uma propaganda na TV. Na hora me interessei, 
+abri o site, li o edital, me inscrevi e acompanhei as palestras no YouTube. 
+Sempre tive o sonho de aprender programação; queria criar meus códigos e 
+ver as pessoas usando, o que foi uma motivação a mais para a minha 
+inscrição. Foi quando, entre as palestras, fiquei sabendo de um curso 
+do próprio SENAI. Na mesma hora me inscrevi e comecei a fazer as aulas.
+
+
+1. O CORAÇÃO DO PROJETO
+-----------------------
+Este site não é apenas um exercício de curso; é o reflexo da minha 
+transição e do meu primeiro contato real com o desenvolvimento de software. 
+O objetivo foi criar um espaço que unisse meu passado em Piratini (RS) 
+com o meu presente e futuro em Schroeder (SC). Desenvolvi este portfólio 
+para mostrar que a curiosidade jornalística e histórica que sempre tive 
+agora ganha uma nova ferramenta: a programação.
+
+
+2. AS FERRAMENTAS QUE USEI
+--------------------------
+Para tirar a ideia do papel, trabalhei com o "trio de ferro" da web:
+
+* HTML5: Usei para dar corpo e estrutura ao site, garantindo que cada 
+  informação (sobre mim, meus projetos e contatos) estivesse no seu 
+  devido lugar.
+* CSS3: Aqui foi onde dei vida ao visual. Usei o CSS Grid para organizar 
+  meus projetos em "cards" modernos e adicionei efeitos de movimento 
+  para deixar a navegação mais viva e agradável.
+* JAVASCRIPT: Este foi o meu primeiro grande desafio de lógica. Criei um 
+  seletor de idiomas usando Switch-Case para dar as boas-vindas aos 
+  visitantes e um validador de idade para o formulário. É onde o "motor" 
+  do site começa a rodar.
+
+
+3. POR QUE MISTURAR O FÍSICO COM O DIGITAL?
+-------------------------------------------
+Você vai notar que listei projetos como "Resgates Históricos Orais" ao 
+lado do meu "Piratini Game". Fiz isso de propósito. Acredito que ser um 
+bom programador exige saber trabalhar em equipe, ouvir pessoas e ter 
+visão crítica — habilidades que lapidei nesses projetos anteriores e 
+que agora trago para o mundo do código.
+
+
+4. MINHA VISÃO DE APRENDIZADO
+-----------------------------
+Como o cronograma foi intenso, foquei minhas energias em dominar os 
+fundamentos: variáveis, condições e a estrutura básica da página. Sei 
+que ainda tenho muito a aprender sobre laços de repetição e manipulação 
+avançada de dados. Vejo este projeto como a "versão 1.0" de uma longa 
+jornada, e estou ansioso para aprofundar esses pontos nas próximas 
+160 horas de curso do programa SCTEC.
+
+
+5. MINHA VIDA ESCOLAR E TRAJETÓRIA
+----------------------------------
+Desde o Pré 2 até o 9º ano, estudei na E.M.E.I.E.F Padre Reinaldo, 
+localizada em Piratini (RS). Minha criatividade e comunicação me 
+levaram a ter um grande reconhecimento na escola. Há cerca de dois meses, 
+eu e minha família nos mudamos para Schroeder (SC) com o intuito de 
+ter um futuro melhor, pois aqui o foco na área de trabalho é muito forte.
+
+Decidi ir para a Heleodoro Borges pois lá também havia um curso de 
+tecnologia. Pensei: "Vou tentar aprender tudo o que me ensinarem, 
+para ter conhecimento prévio em várias áreas". Aqui as escolas são muito 
+bem estruturadas e me sinto realmente bem. 
+
+Morar na campanha sempre foi trabalhoso; havia muita falta de recursos. 
+Muitos alunos não podiam frequentar a escola por causa das chuvas, pois 
+o transporte era arriscado. Este foi um dos gatilhos para virmos para cá; 
+sabíamos que aqui teríamos as oportunidades que eu precisava para crescer.
+
+============================================================

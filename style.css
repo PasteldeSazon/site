@@ -1,22 +1,10 @@
+/* ajustar fonte de todo o texto */
 * {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
 }
-
-h1 {
-  margin: 10px;
-  padding: 10px;
-}
-
-header h1 {
-  position: fixed;
-  border: 1px solid gray;
-  padding: 1px;
-  top: 0px;
-  background-color: aliceblue;
-}
-
+/* configuraçoes dos cards */
 #projetos {
   text-align: center;
   margin-top: 80px;
@@ -71,12 +59,13 @@ header h1 {
 .negrito {
   font-weight: bold;
 }
-
+/* configuraçoes de textos individuais */
 html {
-  background-image: url("imagem\ de\ fundo.png");
+  background-image: url("imagem-de-fundo.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -91,10 +80,32 @@ h3 {
   color: cyan;
 }
 
+/* Estilização da Tabela */
 table {
-  color: darkgrey;
+  width: 100%; /* Faz a tabela ocupar a largura total do container */
+  border-collapse: collapse; /* Une as bordas para não ficarem duplas */
+  margin: 20px 0;
+  background-color: #061427; /* Fundo escuro para combinar com seus cards */
+  color: white;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que as bordas arredondadas funcionem */
 }
 
+th, td {
+  border: 1px solid #00ffa6; /* Cria a linha divisória com o verde neon que você usou nos links */
+  padding: 12px; /* Dá um "espaço para respirar" dentro de cada célula */
+  text-align: left;
+}
+
+th {
+  background-color: #00ffa6; /* Fundo verde para o cabeçalho */
+  color: #061427; /* Texto escuro no cabeçalho para dar contraste */
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #0d213d; /* Efeito de destaque ao passar o mouse na linha */
+}
 form {
   color: aliceblue;
 }
@@ -110,16 +121,50 @@ address {
 a {
   color: aqua;
 }
-
-.imgAlunos{
+/* configuraçoes de imagens */
+.imgAlunos {
   width: 328px;
   height: 315px;
   margin-top: 20px;
   margin-bottom: -40px;
-
 }
 
 .caraterísticas {
   clear: both;
 }
 
+#containerNavbar {
+  padding: 10px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between; /* separa esquerda e direita */
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: #00ffa6;
+  color: #061427;
+
+  padding: 12px 16px;
+  border-radius: 50%;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-topo:hover {
+  background-color: white;
+}
+
+input:invalid {
+    border: 1px solid #ff4d4d;
+}
