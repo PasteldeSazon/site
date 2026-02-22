@@ -591,7 +591,11 @@
         </address>
         <br />
 
-        <form action="https://formspree.io/f/mwvnrdpw" method="POST" onsubmit="return enviarComMensagem(event)">
+        <form
+          action="https://formspree.io/f/mwvnrdpw"
+          method="POST"
+          onsubmit="return enviarComMensagem(event);"
+        >
           <input
             type="hidden"
             name="_next"
@@ -599,16 +603,36 @@
           />
 
           <label for="nome">Nome: </label>
-          <input type="text" id="nome" name="nome" placeholder="primeiro nome"required /> <br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="primeiro nome"
+            required
+          />
+          <br />
 
           <label for="sobrenome">Sobrenome: </label>
-          <input type="text" id="sobrenome" name="sobrenome" placeholder="resto do nome"required /> <br />
+          <input
+            type="text"
+            id="sobrenome"
+            name="sobrenome"
+            placeholder="resto do nome"
+            required
+          />
+          <br />
 
           <label for="email">E-mail: </label>
           <input type="email" id="email" name="email" required /> <br />
 
           <label for="telefone">Telefone: </label>
-          <input type="tel" id="telefone" name="telefone" placeholder="(Seu DDD) Seu numero de telefone"/> <br />
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(Seu DDD) Seu numero de telefone"
+          />
+          <br />
 
           <label for="idade">Idade: </label>
           <input type="number" id="idade" name="idade" />
@@ -671,6 +695,22 @@
       <p id="direitos">&copy;Direitos reservados a Gabriel</p>
     </footer>
     <a href="#topo" class="btn-topo">↑</a>
+    <section
+      id="atualizacoes"
+      style="
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-top: 2px solid #00ffa6;
+      "
+    >
+      <h3>📌 Notas de Atualização</h3>
+      <p>
+        Este site é um projeto vivo! Acompanhe as últimas mudanças direto no meu
+        <a href="https://github.com/pasteldesazon/site" target="_blank"
+          >Repositório do GitHub</a
+        >.
+      </p>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
