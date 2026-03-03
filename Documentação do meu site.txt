@@ -78,4 +78,5 @@ Muitos alunos não podiam frequentar a escola por causa das chuvas, pois
 o transporte era arriscado. Este foi um dos gatilhos para virmos para cá; 
 sabíamos que aqui teríamos as oportunidades que eu precisava para crescer.
 
+"Para visualizar as atualizações em tempo real deste projeto e o código-fonte atualizado, acesse o link do meu repositório: https://pasteldesazon.github.io/site/"
 ============================================================
