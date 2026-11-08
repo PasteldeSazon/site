@@ -4,30 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/output.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Home</title>
   </head>
-  <body>
+  <body class="bg-stone-950">
     <main>
-      <header>
-        <nav>
-          <h1>
+      <header class="px-6 py-4">
+        <nav class="flex">
+          <h1 class="text-stone-200 ml-10 mr-10 mt-5 font-display-modern font-bold text-3xl pl-4">
             <a href="./index.html">MEU PORTFOLIODEV</a>
           </h1>
-          <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#formacao">Formação Acadêmica</a></li>
-            <li><a href="#certificados">Licenças e certificados</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#conectar">Conecte-se comigo</a></li>
+          <ul class="flex ml-auto mr-10 gap-8 justify-items-end mt-5">
+            <li class="text-amber-200 font-sans text-lg"><a href="#sobre">Sobre</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#habilidades">Habilidades</a>
+            </li>
+            <li class="text-amber-200 font-sans text-lg"><a href="#projetos">Projetos</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#formacao">Formação Acadêmica</a>
+            </li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#certificados">Licenças e certificados</a>
+            </li>
+            <li class="text-amber-200 font-sans text-lg"><a href="#contato">Contato</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#conectar">Conecte-se comigo</a>
+            </li>
           </ul>
         </nav>
       </header>
-      <div>
-        <p>Opa, eu sou Gabriel!!</p>
-        <p>Estudante de Programação</p>
-        <p>Fazendo e aprendendo o que gosto para ajudar as pessoas</p>
+      <div class="flex flex-col items-center justify-center mt-15">
+        <p class="text-amber-200 font-display-modern text-2xl">Opa, me chamo Gabriel!! E sou</p>
+        <p class="text-stone-200 text-7xl font-bold font-display-modern">
+          Estudante de Programação
+        </p>
+        <p class="text-amber-200 font-display-modern text-2xl">
+          Fazendo e aprendendo o que gosto para ajudar as pessoas
+        </p>
       </div>
       <section id="sobre">
         <h2>Sobre Mim</h2>
