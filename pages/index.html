@@ -17,22 +17,30 @@
     <main>
       <header>
         <nav class="flex">
-          <h1 class="text-stone-200 ml-10 mr-10 mt-5 font-display-modern font-bold text-3xl pl-4">
+          <h1
+            class="text-stone-200 ml-10 mr-10 mt-5 font-display-modern font-bold text-3xl pl-4"
+          >
             <a href="./index.html">MEU PORTFOLIODEV</a>
           </h1>
           <ul class="flex ml-auto mr-10 gap-8 justify-items-end mt-5">
-            <li class="text-amber-200 font-sans text-lg"><a href="#sobre">Sobre</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#sobre">Sobre</a>
+            </li>
             <li class="text-amber-200 font-sans text-lg">
               <a href="#habilidades">Habilidades</a>
             </li>
-            <li class="text-amber-200 font-sans text-lg"><a href="#projetos">Projetos</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#projetos">Projetos</a>
+            </li>
             <li class="text-amber-200 font-sans text-lg">
               <a href="#formacao">Formação Acadêmica</a>
             </li>
             <li class="text-amber-200 font-sans text-lg">
               <a href="#certificados">Licenças e certificados</a>
             </li>
-            <li class="text-amber-200 font-sans text-lg"><a href="#contato">Contato</a></li>
+            <li class="text-amber-200 font-sans text-lg">
+              <a href="#contato">Contato</a>
+            </li>
             <li class="text-amber-200 font-sans text-lg">
               <a href="#conectar">Conecte-se comigo</a>
             </li>
@@ -40,7 +48,9 @@
         </nav>
       </header>
       <div class="flex flex-col items-center justify-center mt-15">
-        <p class="text-amber-200 font-display-modern text-2xl">Opa, me chamo Gabriel!! E sou</p>
+        <p class="text-amber-200 font-display-modern text-2xl">
+          Opa, me chamo Gabriel!! E sou
+        </p>
         <p class="text-stone-200 text-7xl font-bold font-display-modern">
           Estudante de Programação
         </p>
@@ -48,8 +58,10 @@
           Fazendo e aprendendo o que gosto para ajudar as pessoas
         </p>
       </div>
-      <section id="sobre" class="text-stone-200 font-sans text-lg">
-        <h2 class="text-amber-200 font-bold text-xl font-display-modern">Sobre Mim</h2>
+      <section id="sobre" class="text-stone-200 font-sans text-lg mb-5">
+        <h2 class="text-amber-200 font-bold text-xl font-display-modern mb-2">
+          Sobre Mim
+        </h2>
         <p>
           Sou estudante do <b>Ensino Médio em Tempo Integral</b>, com formação
           voltada à Tecnologia da Informação e interesse em desenvolvimento de
@@ -79,70 +91,75 @@
           aprimorando minhas <b>hard-skills</b> e <b>soft-skills</b>.
         </p>
       </section>
-      <section id="habilidades">
-        <h2>HABILIDADES</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>HABILIDADE</th>
-              <th>DESCRIÇÃO</th>
-            </tr>
-          </thead>
+      <section id="habilidades" class="text-stone-200 font-sans text-lg mb-5">
+        <h2 class="text-amber-200 font-bold text-xl font-display-modern mb-2">
+          HABILIDADES
+        </h2>
+        <div class="rounded-xl overflow-hidden border border-taupe-700/50">
+          <table class="w-full divide-y">
+            <thead class="bg-mauve-900">
+              <tr>
+                <th class="px-6 py-3 text-left text-xl">HABILIDADE</th>
+                <th class="px-6 py-3 text-center text-xl">DESCRIÇÃO</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>
-                Sei boa parte das tags, formulários e tabelas e consigo
-                estruturar boas páginas web com código limpo e boa hierarquia.
-              </td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>
-                Consigo estilizar de forma moderna e adicionar responsividade a
-                tudo feito no HTML. Utilizando Box Model, Flexbox, CSS Grid,
-                seletores desde básico até avançados, Media Queries e classes
-                limpas.
-              </td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>
-                Sei desde o básico (operadores, laços de repetição, estruturas
-                de controle, manipulação e métodos de arrays, funções e tipos de
-                dados) até a parte assíncrona (Promises e async/await para
-                chamadas de API) e o DOM (document.querySelector(),
-                getElementById(), alteração de classes, estilos e textos,
-                addEventListener e localStorage).
-              </td>
-            </tr>
-            <tr>
-              <td>REACT</td>
-              <td>
-                Tenho conhecimento sobre Props, componentização, hooks, consumo
-                de API, rotas privadas e dinâmicas, formulários e estados.
-              </td>
-            </tr>
-            <tr>
-              <td>Tailwind</td>
-              <td>
-                Busco estudar mais sobre esta tecnologia, mesmo tendo feito este
-                portfólio com ela, ainda estou insatisfeito com o que fiz e por
-                isso quero evoluir meus conhecimentos nesta tecnologia.
-              </td>
-            </tr>
-            <tr>
-              <td>Inglês</td>
-              <td>
-                Nível A1, sei escrever frases simples (às vezes pecando na
-                concordância), ler de forma simples, escutar e falar de forma
-                básica. É outra área em que estou totalmente disposto a evoluir,
-                pois saber inglês abre várias portas.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody class="bg-taupe-800 divide-y">
+              <tr>
+                <td class="px-6 py-4">HTML</td>
+                <td class="px-6 py-4">
+                  Sei boa parte das tags, formulários e tabelas e consigo
+                  estruturar boas páginas web com código limpo e boa hierarquia.
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">CSS</td>
+                <td class="px-6 py-4">
+                  Consigo estilizar de forma moderna e adicionar responsividade
+                  a tudo feito no HTML. Utilizando Box Model, Flexbox, CSS Grid,
+                  seletores desde básico até avançados, Media Queries e classes
+                  limpas.
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">JavaScript</td>
+                <td class="px-6 py-4">
+                  Sei desde o básico (operadores, laços de repetição, estruturas
+                  de controle, manipulação e métodos de arrays, funções e tipos
+                  de dados) até a parte assíncrona (Promises e async/await para
+                  chamadas de API) e o DOM (document.querySelector(),
+                  getElementById(), alteração de classes, estilos e textos,
+                  addEventListener e localStorage).
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">REACT</td>
+                <td class="px-6 py-4">
+                  Tenho conhecimento sobre Props, componentização, hooks,
+                  consumo de API, rotas privadas e dinâmicas, formulários e
+                  estados.
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">Tailwind</td>
+                <td class="px-6 py-4">
+                  Busco estudar mais sobre esta tecnologia, mesmo tendo feito
+                  este portfólio com ela, ainda estou insatisfeito com o que fiz
+                  e por isso quero evoluir meus conhecimentos nesta tecnologia.
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">Inglês</td>
+                <td class="px-6 py-4">
+                  Nível A1, sei escrever frases simples (às vezes pecando na
+                  concordância), ler de forma simples, escutar e falar de forma
+                  básica. É outra área em que estou totalmente disposto a
+                  evoluir, pois saber inglês abre várias portas.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section id="projetos">
         <div>
