@@ -430,12 +430,12 @@
               src="../assets/media/images/certificadoM1.jpg"
               alt="Certificado do Primeiro Módulo da trilha"
             />
-            <p class="text-gray-500 text-xs">
+            <b class="text-gray-500 text-xs mt-2">
               Certificado do Primeiro Módulo da trilha
-            </p>
+            </b>
           </div>
         </div>
-        <br>
+        <br />
         <div>
           <p
             class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
@@ -521,49 +521,95 @@
           </div>
         </div>
       </section>
-      <section id="certificados">
-        <h2>Licenças e certificados</h2>
+      <section id="certificados" class="text-stone-200 font-sans text-lg mb-5">
+        <h2
+          class="col-span-full text-amber-200 font-bold text-xl font-display-modern mb-2"
+        >
+          Licenças e certificados
+        </h2>
         <div>
-          <h3>Introdução à Programação Front-End e Back-End</h3>
-          <p><b>Organização emissora: </b>SENAI/SC – LAB 365 Florianópolis</p>
-          <p><b>Data de emissão: </b>04/02/26</p>
-          <p><b>Código da credencial: </b>2507358</p>
-          <h4>MÍDIA</h4>
-          <img
-            src="../assets/media/images/certficadoIntrodução.jpg"
-            alt="Meu certificado de Conclusão"
-          />
+          <h3
+            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+          >
+            Introdução à Programação Front-End e Back-End
+          </h3>
           <p>
-            <b>Meu certificado de Conclusão</b><br />Conclusão do curso
-            Introdução à Programação Front-End e Back-End, oferecido pelo
-            SENAI/SC – LAB 365 Florianópolis, com carga horária de 20 horas.
+            <b class="text-amber-200">Organização emissora: </b>SENAI/SC – LAB
+            365 Florianópolis
+          </p>
+          <p><b class="text-amber-200">Data de emissão: </b>04/02/26</p>
+          <p><b class="text-amber-200">Código da credencial: </b>2507358</p>
+          <p
+            class="text-amber-200 font-bold text-lg font-display-modern mb-2 mt-2 text-center"
+          >
+            MÍDIA
+          </p>
+          <div
+            class="flex flex-col w-90 h-130 justify-center items-center px-8 py-8 rounded-xl bg-mauve-900 mx-auto"
+          >
+            <img
+              src="../assets/media/images/certficadoIntrodução.jpg"
+              alt="Meu certificado de Conclusão"
+            />
+            <b class="text-gray-500 text-xs mt-2">Meu certificado de Conclusão</b>
+          </div>
+          <p>
+            Conclusão do curso Introdução à Programação Front-End e Back-End,
+            oferecido pelo SENAI/SC – LAB 365 Florianópolis, com carga horária
+            de 20 horas.
             <br />
             A formação foi realizada entre 04/02/2026 e 22/02/2026.
           </p>
         </div>
         <div>
-          <h3>Introduction to Cybersecurity</h3>
-          <p><b>Organização emissora: </b>Cisco Networking Academy</p>
+          <h3
+            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+          >
+            Introduction to Cybersecurity
+          </h3>
           <p>
-            <b>Código da credencial: </b>a91df196-944e-464e-85d8-6607f7598f3d
+            <b class="text-amber-200">Organização emissora: </b>Cisco Networking
+            Academy
           </p>
           <p>
-            <b>URL da credencial: </b
+            <b class="text-amber-200">Código da credencial: </b
+            >a91df196-944e-464e-85d8-6607f7598f3d
+          </p>
+          <p>
+            <b class="text-amber-200">URL da credencial: </b
             ><a
               href="https://www.credly.com/badges/a91df196-944e-464e-85d8-6607f7598f3d"
               >https://www.credly.com/badges/a91df196-944e-464e-85d8-6607f7598f3d</a
             >
           </p>
-          <ul>
-            <p><b>Competências</b></p>
-            <li>cibersegurança</li>
+          <p
+            class="text-amber-200 font-bold text-lg font-display-modern mb-2 mt-2 text-center"
+          >
+            Competências
+          </p>
+          <ul class="competencias flex flex-wrap gap-4 justify-center">
+            <li
+              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+            >
+              Cibersegurança
+            </li>
           </ul>
-          <h4>MÍDIA</h4>
-          <img
-            src="../assets/media/images/certificadoSeguranca.jpg"
-            alt="Certificado de conclusão do curso"
-          />
-          <p>Certificado de conclusão do curso</p>
+          <p
+            class="text-amber-200 font-bold text-lg font-display-modern mb-2 mt-2 text-center"
+          >
+            MÍDIA
+          </p>
+          <div
+            class="flex flex-col w-90 h-130 justify-center items-center px-8 py-8 rounded-xl bg-mauve-900 mx-auto"
+          >
+            <img
+              src="../assets/media/images/certificadoSeguranca.jpg"
+              alt="Certificado de conclusão do curso"
+            />
+            <b class="text-gray-500 text-xs mt-2">
+              Certificado de conclusão do curso
+            </b>
+          </div>
           <p>
             Conclusão do curso Introduction to Cybersecurity (6 horas), com foco
             nos fundamentos da segurança cibernética.
@@ -574,11 +620,18 @@
             suas operações, além de apresentar diferentes possibilidades de
             carreira na área de cibersegurança.
           </p>
-          <img
-            src="../assets/media/images/credencialSeguranca.jpg"
-            alt="Minha credencial de conclusão do curso"
-          />
-          <p>Minha credencial de conclusão do curso</p>
+          <div
+            class="flex flex-col w-90 h-130 justify-center items-center px-8 py-8 rounded-xl bg-mauve-900 mx-auto"
+          >
+            <img
+            class="rounded-4xl"
+              src="../assets/media/images/credencialSeguranca.jpg"
+              alt="Minha credencial de conclusão do curso"
+            />
+            <b class="text-gray-500 text-xs mt-2">
+              Minha credencial de conclusão do curso
+            </b>
+          </div>
         </div>
       </section>
       <section id="contato">
