@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @source "../../pages/index.html";
 
+.competencias > li {
+  flex: 0 0 calc((100% - 1rem) / 5);
+  min-width: 0;
+}
+
 @theme {
   --font-display: 'Playfair Display', serif;
   --font-display-modern: 'Space Grotesk', sans-serif;
