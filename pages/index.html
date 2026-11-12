@@ -688,52 +688,55 @@
           </div>
         </div>
       </section>
-      <section id="contato" class="text-stone-200 font-sans text-lg mb-5">
+      <section
+        id="contato"
+        class="mx-auto mb-16 max-w-6xl font-sans text-base text-stone-300 sm:text-lg"
+      >
         <h2
-          class="col-span-full text-amber-200 font-bold text-xl font-display-modern mb-2"
+          class="mb-4 border-b border-stone-800 pb-3 font-display-modern text-2xl font-bold text-amber-200"
         >
           Gostou do meu trabalho???
         </h2>
-        <p>
+        <p class="max-w-4xl leading-relaxed">
           Se achas minha apresentação boa o suficiente, então estou apto a
           trabalhar na sua empresa (caso seja um recrutador)
         </p>
         <div>
           <p
-            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+            class="mb-4 mt-6 font-display-modern text-lg font-semibold text-amber-200"
           >
             Se você prefere um contato direto, pode me chamar por qualuqer um
             dos contatos a seguir:
           </p>
-          <ul class="competencias flex flex-wrap gap-4 justify-center">
+          <ul class="flex flex-wrap justify-start gap-3">
             <li
-              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+              class="min-w-0 rounded-md border border-taupe-700/50 bg-mauve-900 px-5 py-4 font-medium"
             >
               <b>E-mail:</b>
               <a
                 href="mailto:passosgabriel2022@gmail.com"
-                class="text-amber-200"
+                class="break-all text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                 target="_blank"
                 >passosgabriel2022@gmail.com</a
               >
             </li>
             <li
-              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+              class="min-w-0 rounded-md border border-taupe-700/50 bg-mauve-900 px-5 py-4 font-medium"
             >
               <b>WhatsApp:</b>
               <a
                 href="https://wa.me/5553999528115"
                 target="_blank"
-                class="text-amber-200"
+                class="text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                 >Chamar no WhatsApp</a
               >
             </li>
             <li
-              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+              class="min-w-0 rounded-md border border-taupe-700/50 bg-mauve-900 px-5 py-4 font-medium"
             >
               <b>LinkedIn:</b>
               <a
-                class="text-amber-200"
+                class="text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                 href="https://www.linkedin.com/in/gabriel-dos-passos/"
                 target="_blank"
                 >Ver LinkedIn</a
@@ -743,16 +746,16 @@
         </div>
         <div>
           <p
-            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+            class="mb-4 mt-8 font-display-modern text-lg font-semibold text-amber-200"
           >
             Ou envie uma mensagem rápida por aqui
           </p>
           <form action="https://formspree.io/f/mwvnrdpw" method="POST">
-            <div class="flex flex-row justify-center gap-20">
-              <div class="flex flex-col">
+            <div class="mx-auto flex max-w-4xl flex-row justify-center gap-8">
+              <div class="flex min-w-0 flex-1 flex-col">
                 <label for="nome"><b>Nome/Empresa:</b> </label>
                 <input
-                  class="border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                  class="w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-4 py-2 text-stone-100 placeholder:text-stone-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   type="text"
                   id="nome"
                   placeholder="Ex: Ana da Empresa Tech"
@@ -760,10 +763,10 @@
                   required
                 />
               </div>
-              <div class="flex flex-col">
+              <div class="flex min-w-0 flex-1 flex-col">
                 <label for="email"><b>E-mail de contato:</b> </label>
                 <input
-                  class="border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                  class="w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-4 py-2 text-stone-100 placeholder:text-stone-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                   type="email"
                   id="email"
                   placeholder="Ex: nome@empresa.com"
@@ -772,23 +775,23 @@
                 />
               </div>
             </div>
-            <div class="flex flex-col justify-center mt-3">
-              <label for="mensagem" class="self-center"
+            <div class="mx-auto mt-4 flex max-w-4xl flex-col">
+              <label for="mensagem" class="mb-2"
                 ><b>Deixe sua mensagem:</b></label
               >
               <textarea
-                class="self-center w-80 h-100 border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                class="h-64 w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-4 py-2 text-stone-100 placeholder:text-stone-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                 id="mensagem"
                 placeholder="Olá Gabriel! Vi seu portfólio e gostaria de conversar sobre..."
                 name="feedback"
                 required
               ></textarea>
             </div>
-            <div class="flex flex-col justify-center mt-3">
+            <div class="mt-4 flex flex-col">
               <button
                 type="submit"
                 value="enviar"
-                class="px-4 py-2 rounded-lg self-center border border-amber-200 bg-amber-200"
+                class="self-center rounded-md border border-amber-200 bg-amber-200 px-5 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
               >
                 <b class="text-gray-900">Enviar</b>
               </button>
@@ -796,33 +799,44 @@
           </form>
         </div>
       </section>
-      <footer id="conectar" class="bg-mauve-900 justify-stretch">
-        <p class="text-amber-200">&copy; 2026 Gabriel da Rosa dos Passos.</p>
-        <div>
-          <p class="text-amber-200 text-lg">Conecte-se Comigo</p>
-          <ul>
-            <li>
-              <a
-                class="font-bold"
-                href="https://github.com/PasteldeSazon"
-                target="_blank"
-                >Git Hub</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-bold"
-                href="https://www.linkedin.com/in/gabriel-dos-passos/"
-                target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a class="font-bold" href="mailto:passosgabriel2022@gmail.com"
-                >Email</a
-              >
-            </li>
-          </ul>
+      <footer
+        id="conectar"
+        class="mt-12 border-t border-stone-800 bg-mauve-900 px-6 py-6 text-stone-300 sm:px-8"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"
+        >
+          <p class="text-sm">&copy; 2026 Gabriel da Rosa dos Passos.</p>
+          <div>
+            <p class="mb-2 font-display-modern text-lg font-semibold text-amber-200">
+              Conecte-se Comigo
+            </p>
+            <ul class="flex flex-wrap gap-x-5 gap-y-2">
+              <li>
+                <a
+                  class="font-medium text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="https://github.com/PasteldeSazon"
+                  target="_blank"
+                  >Git Hub</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="https://www.linkedin.com/in/gabriel-dos-passos/"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-amber-200 underline decoration-amber-200/50 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+                  href="mailto:passosgabriel2022@gmail.com"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </main>
