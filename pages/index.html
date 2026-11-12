@@ -551,7 +551,9 @@
               src="../assets/media/images/certficadoIntrodução.jpg"
               alt="Meu certificado de Conclusão"
             />
-            <b class="text-gray-500 text-xs mt-2">Meu certificado de Conclusão</b>
+            <b class="text-gray-500 text-xs mt-2"
+              >Meu certificado de Conclusão</b
+            >
           </div>
           <p>
             Conclusão do curso Introdução à Programação Front-End e Back-End,
@@ -624,7 +626,7 @@
             class="flex flex-col w-90 h-130 justify-center items-center px-8 py-8 rounded-xl bg-mauve-900 mx-auto"
           >
             <img
-            class="rounded-4xl"
+              class="rounded-4xl"
               src="../assets/media/images/credencialSeguranca.jpg"
               alt="Minha credencial de conclusão do curso"
             />
@@ -634,33 +636,52 @@
           </div>
         </div>
       </section>
-      <section id="contato">
-        <h2>Gostou do meu trabalho???</h2>
+      <section id="contato" class="text-stone-200 font-sans text-lg mb-5">
+        <h2
+          class="col-span-full text-amber-200 font-bold text-xl font-display-modern mb-2"
+        >
+          Gostou do meu trabalho???
+        </h2>
         <p>
           Se achas minha apresentação boa o suficiente, então estou apto a
           trabalhar na sua empresa (caso seja um recrutador)
         </p>
         <div>
-          <p>
+          <p
+            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+          >
             Se você prefere um contato direto, pode me chamar por qualuqer um
             dos contatos a seguir:
           </p>
-          <ul>
-            <li>
-              <strong>E-mail:</strong>
-              <a href="mailto:passosgabriel2022@gmail.com"
+          <ul class="competencias flex flex-wrap gap-4 justify-center">
+            <li
+              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+            >
+              <b>E-mail:</b>
+              <a
+                href="mailto:passosgabriel2022@gmail.com"
+                class="text-amber-200"
+                target="_blank"
                 >passosgabriel2022@gmail.com</a
               >
             </li>
-            <li>
-              <strong>WhatsApp:</strong>
-              <a href="https://wa.me/5553999528115" target="_blank"
+            <li
+              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+            >
+              <b>WhatsApp:</b>
+              <a
+                href="https://wa.me/5553999528115"
+                target="_blank"
+                class="text-amber-200"
                 >Chamar no WhatsApp</a
               >
             </li>
-            <li>
-              <strong>LinkedIn:</strong>
+            <li
+              class="rounded-xl bg-mauve-900 px-8 py-8 text-center font-semibold"
+            >
+              <b>LinkedIn:</b>
               <a
+                class="text-amber-200"
                 href="https://www.linkedin.com/in/gabriel-dos-passos/"
                 target="_blank"
                 >Ver LinkedIn</a
@@ -669,53 +690,86 @@
           </ul>
         </div>
         <div>
-          <p>Ou envie uma mensagem rápida por aqui</p>
+          <p
+            class="text-amber-200 text-xl font-display-modern mb-2 mt-2 text-center"
+          >
+            Ou envie uma mensagem rápida por aqui
+          </p>
           <form action="https://formspree.io/f/mwvnrdpw" method="POST">
-            <label for="nome">Nome/Empresa: </label>
-            <input
-              type="text"
-              id="nome"
-              placeholder="Ex: Ana da Empresa Tech"
-              name="empresa"
-              required
-            />
-            <label for="email">E-mail de contato: </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Ex: nome@empresa.com"
-              name="E-mail"
-              required
-            />
-            <label for="mensagem">Deixe sua mensagem:</label>
-            <textarea
-              id="mensagem"
-              placeholder="Olá Gabriel! Vi seu portfólio e gostaria de conversar sobre..."
-              name="feedback"
-              required
-            ></textarea>
-            <button type="submit" value="enviar">Enviar</button>
+            <div class="flex flex-row justify-center gap-20">
+              <div class="flex flex-col">
+                <label for="nome"><b>Nome/Empresa:</b> </label>
+                <input
+                  class="border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                  type="text"
+                  id="nome"
+                  placeholder="Ex: Ana da Empresa Tech"
+                  name="empresa"
+                  required
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="email"><b>E-mail de contato:</b> </label>
+                <input
+                  class="border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                  type="email"
+                  id="email"
+                  placeholder="Ex: nome@empresa.com"
+                  name="E-mail"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center mt-3">
+              <label for="mensagem" class="self-center"
+                ><b>Deixe sua mensagem:</b></label
+              >
+              <textarea
+                class="self-center w-80 h-100 border border-amber-200 px-4 py-2 rounded-lg bg-mauve-900"
+                id="mensagem"
+                placeholder="Olá Gabriel! Vi seu portfólio e gostaria de conversar sobre..."
+                name="feedback"
+                required
+              ></textarea>
+            </div>
+            <div class="flex flex-col justify-center mt-3">
+              <button
+                type="submit"
+                value="enviar"
+                class="px-4 py-2 rounded-lg self-center border border-amber-200 bg-amber-200"
+              >
+                <b class="text-gray-900">Enviar</b>
+              </button>
+            </div>
           </form>
         </div>
       </section>
-      <footer id="conectar">
-        <p>&copy; 2026 Gabriel da Rosa dos Passos.</p>
+      <footer id="conectar" class="bg-mauve-900 justify-stretch">
+        <p class="text-amber-200">&copy; 2026 Gabriel da Rosa dos Passos.</p>
         <div>
-          <h3>Conecte-se Comigo</h3>
+          <p class="text-amber-200 text-lg">Conecte-se Comigo</p>
           <ul>
             <li>
-              <a href="https://github.com/PasteldeSazon" target="_blank"
+              <a
+                class="font-bold"
+                href="https://github.com/PasteldeSazon"
+                target="_blank"
                 >Git Hub</a
               >
             </li>
             <li>
               <a
+                class="font-bold"
                 href="https://www.linkedin.com/in/gabriel-dos-passos/"
                 target="_blank"
                 >Linkedin</a
               >
             </li>
-            <li><a href="mailto:passosgabriel2022@gmail.com">Email</a></li>
+            <li>
+              <a class="font-bold" href="mailto:passosgabriel2022@gmail.com"
+                >Email</a
+              >
+            </li>
           </ul>
         </div>
       </footer>
