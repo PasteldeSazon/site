@@ -770,7 +770,7 @@
           >
             Ou envie uma mensagem rápida por aqui
           </p>
-          <form action="https://formspree.io/f/mwvnrdpw" method="POST">
+          <form action="https://formspree.io/f/mwvnrdpw" method="POST" novalidate>
             <div class="mx-auto flex max-w-4xl flex-row justify-center gap-8">
               <div class="flex min-w-0 flex-1 flex-col">
                 <label for="nome"><b>Nome/Empresa:</b> </label>
@@ -780,8 +780,10 @@
                   id="nome"
                   placeholder="Ex: Ana da Empresa Tech"
                   name="empresa"
-                  required
+                  minlength="2"
+                  maxlength="100"
                 />
+                <span id="erroNome" class="aviso-limite"></span>
               </div>
               <div class="flex min-w-0 flex-1 flex-col">
                 <label for="email"><b>E-mail de contato:</b> </label>
@@ -791,8 +793,8 @@
                   id="email"
                   placeholder="Ex: nome@empresa.com"
                   name="E-mail"
-                  required
                 />
+                <span id="erroEmail" class="aviso-limite"></span>
               </div>
             </div>
             <div class="mx-auto mt-4 flex max-w-4xl flex-col">
@@ -804,11 +806,17 @@
                 id="mensagem"
                 placeholder="Olá Gabriel! Vi seu portfólio e gostaria de conversar sobre..."
                 name="feedback"
-                required
               ></textarea>
+              <span
+                id="erroText"
+                class="mensagem-erro"
+                aria-live="polite"
+              ></span>
+              <p>Total de caracteres: <span id="contador">0/1500</span></p>
             </div>
             <div class="mt-4 flex flex-col">
               <button
+                id="botao"
                 type="submit"
                 value="enviar"
                 class="self-center rounded-md border border-amber-200 bg-amber-200 px-5 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
@@ -862,5 +870,6 @@
         </div>
       </footer>
     </main>
+    <script src="../assets/scripts/form.js"></script>
   </body>
 </html>
