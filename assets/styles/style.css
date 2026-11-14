@@ -2,6 +2,14 @@
 @import 'tailwind-animations';
 @source "../../pages/index.html";
 
+html {
+  scrollbar-width: none; /* Firefox e navegadores compatíveis */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Edge e Safari */
+}
+
 .competencias > li {
   flex: 0 0 calc((100% - 1rem) / 5);
   min-width: 0;
