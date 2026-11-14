@@ -1,5 +1,14 @@
 @import "tailwindcss";
+@import 'tailwind-animations';
 @source "../../pages/index.html";
+
+html {
+  scrollbar-width: none; /* Firefox e navegadores compatíveis */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Edge e Safari */
+}
 
 .competencias > li {
   flex: 0 0 calc((100% - 1rem) / 5);
@@ -19,6 +28,29 @@
   border-radius: 1rem;
   object-fit: cover;
   object-position: center;
+}
+
+nav a[aria-current="location"] {
+  color: var(--color-stone-100);
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-amber-200);
+  text-underline-offset: 0.4rem;
+}
+
+.table-cell-hover tbody td {
+  transition: background-color 180ms ease;
+}
+
+@media (hover: hover) {
+  .table-cell-hover tbody tr:hover > td {
+    background-color: var(--color-taupe-700);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .table-cell-hover tbody td {
+    transition: none;
+  }
 }
 
 @media (max-width: 767px) {

@@ -21,6 +21,7 @@
   "homepage": "https://github.com/PasteldeSazon/site#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.5",
+    "tailwind-animations": "^1.0.2",
     "tailwindcss": "^4.3.5"
   }
 }
