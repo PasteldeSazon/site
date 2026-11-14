@@ -265,6 +265,9 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -273,6 +276,9 @@
   }
   .max-h-\[32rem\] {
     max-height: 32rem;
+  }
+  .w-1 {
+    width: var(--spacing);
   }
   .w-1\/5 {
     width: calc(1 / 5 * 100%);
@@ -303,6 +309,12 @@
   }
   .flex-1 {
     flex: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -364,6 +376,9 @@
     border-top-width: calc(1px * var(--tw-divide-y-reverse));
     border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   }
+  :where(.divide-taupe-700 > :not(:last-child)) {
+    border-color: var(--color-taupe-700);
+  }
   :where(.divide-taupe-700\/50 > :not(:last-child)) {
     border-color: color-mix(in srgb, oklch(36.7% 0.016 35.7) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -403,6 +418,9 @@
   }
   .border-stone-800 {
     border-color: var(--color-stone-800);
+  }
+  .border-taupe-700 {
+    border-color: var(--color-taupe-700);
   }
   .border-taupe-700\/50 {
     border-color: color-mix(in srgb, oklch(36.7% 0.016 35.7) 50%, transparent);
@@ -568,6 +586,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .decoration-amber-200 {
+    text-decoration-color: var(--color-amber-200);
+  }
   .decoration-amber-200\/50 {
     text-decoration-color: color-mix(in srgb, oklch(92.4% 0.12 95.746) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -576,6 +597,10 @@
   }
   .underline-offset-4 {
     text-underline-offset: 4px;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .placeholder\:text-stone-400::placeholder {
     color: var(--color-stone-400);
@@ -633,6 +658,55 @@
     .md\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .animate-dialog {
+    opacity: var(--tw-anim-dialog-start-opacity, 0);
+    translate: var(--tw-anim-dialog-start-translate, 0 1.5rem);
+    scale: var(--tw-anim-dialog-start-scale, 0.96);
+    will-change: opacity, translate, scale;
+    transition: opacity var(--tw-anim-dialog-duration, 350ms) ease, translate var(--tw-anim-dialog-duration, 350ms) var(--tw-anim-dialog-easing, cubic-bezier(0.22, 1, 0.36, 1)), scale var(--tw-anim-dialog-duration, 350ms) var(--tw-anim-dialog-easing, cubic-bezier(0.22, 1, 0.36, 1)), overlay var(--tw-anim-dialog-duration, 350ms) ease allow-discrete, display var(--tw-anim-dialog-duration, 350ms) ease allow-discrete;
+  }
+  .animate-dialog[open] {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+  .animate-dialog[open].is-closing {
+    opacity: var(--tw-anim-dialog-start-opacity, 0);
+    translate: var(--tw-anim-dialog-start-translate, 0 1.5rem);
+    scale: var(--tw-anim-dialog-start-scale, 0.96);
+  }
+  .animate-dialog[open].is-opening {
+    opacity: var(--tw-anim-dialog-start-opacity, 0);
+    translate: var(--tw-anim-dialog-start-translate, 0 1.5rem);
+    scale: var(--tw-anim-dialog-start-scale, 0.96);
+  }
+  @starting-style {
+    .animate-dialog[open] {
+      opacity: var(--tw-anim-dialog-start-opacity, 0);
+      translate: var(--tw-anim-dialog-start-translate, 0 1.5rem);
+      scale: var(--tw-anim-dialog-start-scale, 0.96);
+    }
+  }
+  .animate-dialog::backdrop {
+    opacity: 0;
+    background: var(--tw-anim-dialog-backdrop-background, rgb(15 23 42 / 0.58));
+    backdrop-filter: var(--tw-anim-dialog-backdrop-filter, blur(8px));
+    transition: opacity var(--tw-anim-dialog-duration, 350ms) ease, overlay var(--tw-anim-dialog-duration, 350ms) ease allow-discrete, display var(--tw-anim-dialog-duration, 350ms) ease allow-discrete;
+  }
+  .animate-dialog[open]::backdrop {
+    opacity: 1;
+  }
+  .animate-dialog[open].is-closing::backdrop {
+    opacity: 0;
+  }
+  .animate-dialog[open].is-opening::backdrop {
+    opacity: 0;
+  }
+  @starting-style {
+    .animate-dialog[open]::backdrop {
+      opacity: 0;
     }
   }
 }
