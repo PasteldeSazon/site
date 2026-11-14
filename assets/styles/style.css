@@ -22,6 +22,22 @@
   object-position: center;
 }
 
+.table-cell-hover tbody td {
+  transition: background-color 180ms ease;
+}
+
+@media (hover: hover) {
+  .table-cell-hover tbody tr:hover > td {
+    background-color: var(--color-taupe-700);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .table-cell-hover tbody td {
+    transition: none;
+  }
+}
+
 @media (max-width: 767px) {
   .about-layout {
     grid-template-columns: 1fr;
