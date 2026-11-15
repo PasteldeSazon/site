@@ -24,6 +24,11 @@ function configurarFormulario(ids) {
   }
 
   mensagem.addEventListener("input", atualizarContador);
+
+  window.addEventListener("pageshow", () => {
+    setTimeout(atualizarContador, 0);
+  });
+
   atualizarContador();
 
   formulario.addEventListener("submit", (evento) => {
