@@ -137,6 +137,7 @@
                   action="https://formspree.io/f/mwvnrdpw"
                   method="POST"
                   novalidate
+                  id="formSidebar"
                 >
                   <div
                     class="mx-auto flex max-w-4xl flex-row justify-center gap-8"
@@ -146,24 +147,24 @@
                       <input
                         class="w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-3 py-1 text-stone-100 placeholder:text-stone-400 transition-colors duration-200 focus-visible:border-amber-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                         type="text"
-                        id="nome"
+                        id="nomeSidebar"
                         placeholder="Ana da Empresa Tech"
                         name="empresa"
                         minlength="2"
                         maxlength="100"
                       />
-                      <span id="erroNome" class="aviso-limite"></span>
+                      <span id="erroNomeSidebar" class="aviso-limite"></span>
                     </div>
                     <div class="flex min-w-0 flex-1 flex-col">
                       <label for="email"><b>E-mail:</b> </label>
                       <input
                         class="w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-3 py-1 text-stone-100 placeholder:text-stone-400 transition-colors duration-200 focus-visible:border-amber-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
                         type="email"
-                        id="email"
+                        id="emailSidebar"
                         placeholder="nome@empresa.com"
                         name="E-mail"
                       />
-                      <span id="erroEmail" class="aviso-limite"></span>
+                      <span id="erroEmailSidebar" class="aviso-limite"></span>
                     </div>
                   </div>
                   <div class="mx-auto mt-4 flex max-w-4xl flex-col">
@@ -172,22 +173,22 @@
                     >
                     <textarea
                       class="h-64 w-full rounded-md border border-taupe-700/50 bg-mauve-900 px-4 py-2 text-stone-100 placeholder:text-stone-400 transition-colors duration-200 focus-visible:border-amber-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
-                      id="mensagem"
+                      id="mensagemSidebar"
                       placeholder="Olá Gabriel! Vi seu portfólio e gostaria de conversar sobre..."
                       name="feedback"
                     ></textarea>
                     <span
-                      id="erroText"
+                      id="erroTextSidebar"
                       class="mensagem-erro"
                       aria-live="polite"
                     ></span>
                     <p>
-                      Total de caracteres: <span id="contador">0/1500</span>
+                      Total de caracteres: <span id="contadorSidebar">0/1500</span>
                     </p>
                   </div>
                   <div class="mt-4 flex flex-col">
                     <button
-                      id="botao"
+                      id="botaoSidebar"
                       type="submit"
                       value="enviar"
                       class="self-center rounded-md border border-amber-200 bg-amber-200 px-5 py-2 transition-colors hover:bg-amber-100 active:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
@@ -927,6 +928,7 @@
             action="https://formspree.io/f/mwvnrdpw"
             method="POST"
             novalidate
+            id="form"
           >
             <div class="mx-auto flex max-w-4xl flex-row justify-center gap-8">
               <div class="flex min-w-0 flex-1 flex-col">
