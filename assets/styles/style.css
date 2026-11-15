@@ -3,11 +3,17 @@
 @source "../../pages/index.html";
 
 html {
-  scrollbar-width: none; /* Firefox e navegadores compatíveis */
+  scrollbar-width: auto;
+  scrollbar-color: #fde68a #1d161e;
 }
 
-html::-webkit-scrollbar {
-  display: none; /* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
 }
 
 .competencias > li {
@@ -123,7 +129,7 @@ textarea.limite-atingido {
   &.active {
     right: 0;
   }
-   width: min(400px, 100vw);
+  width: min(400px, 100vw);
   height: 100dvh;
   box-sizing: border-box;
   padding: clamp(1rem, 4vw, 1.5rem);
