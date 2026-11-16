@@ -13,7 +13,7 @@
 
     <title>Home</title>
   </head>
-  <body class="bg-stone-950 px-6 py-4">
+  <body id="topo" class="bg-stone-950 px-6 py-4">
     <div
       class="fixed top-0 left-0 z-50 h-1.5 w-full origin-left bg-gradient-to-r from-amber-200 to-amber-700/50 animate-expand-horizontally timeline-scroll motion-reduce:animate-none"
     ></div>
@@ -1055,6 +1055,26 @@
         </div>
       </footer>
     </main>
+    <a
+      id="voltar-ao-topo"
+      href="#topo"
+      aria-label="Voltar ao topo"
+      title="Voltar ao topo"
+      class="fixed right-5 bottom-5 z-40 hidden items-center justify-center rounded-full border border-amber-200 bg-mauve-900 p-3 text-amber-200 shadow-lg transition-colors hover:bg-stone-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200"
+    >
+      <svg
+        aria-hidden="true"
+        class="h-6 w-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </a>
     <script src="../assets/scripts/navigation.js"></script>
     <script src="../assets/scripts/form.js"></script>
     <script src="../assets/scripts/sidebar.js"></script>

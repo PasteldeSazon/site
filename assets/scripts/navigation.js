@@ -33,3 +33,15 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sectionLinks.forEach(({ section }) => sectionObserver.observe(section));
+
+const backToTopLink = document.querySelector("#voltar-ao-topo");
+
+if (backToTopLink) {
+  const toggleBackToTopLink = () => {
+    backToTopLink.classList.toggle("hidden", window.scrollY <= 400);
+    backToTopLink.classList.toggle("inline-flex", window.scrollY > 400);
+  };
+
+  window.addEventListener("scroll", toggleBackToTopLink, { passive: true });
+  toggleBackToTopLink();
+}
