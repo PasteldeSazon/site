@@ -2,7 +2,6 @@
 
 > Fazendo e aprendendo o que gosto para ajudar as pessoas.
 
-**[Acessar o portfólio](COLE_AQUI_O_LINK_PUBLICADO)** ·
 **[Ver meu GitHub](https://github.com/PasteldeSazon)** ·
 **[Conectar no LinkedIn](https://www.linkedin.com/in/gabriel-dos-passos/)**
 
